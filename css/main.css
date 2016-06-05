@@ -1,0 +1,545 @@
+/* ------------------------
+   Basic Setup 
+   ------------------------*/
+  :root {
+    font-size: 16px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+   h1,
+   h2  {
+   	text-align: center;
+   }
+   h1 {
+    font-size: 1.25rem;
+   }
+   h2 {
+    font-weight: 300;
+   }
+   h2,
+   h3 {
+    font-size: 1.125rem;
+   }
+   h3 {
+    font-weight: bold;
+  }
+   h4 {
+    font-size: 1rem;
+  }
+   p {
+    font-size: .875rem;
+  }
+   .find-a-job h3,
+   .browse-offices h3 {
+    text-shadow: 2px 0px 0px #000;
+   }
+   a {
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 0.8125rem;
+   }
+   .logo {
+    font-size: 1rem;
+   }
+   footer p,
+   footer a {font-size: 0.625rem;}
+ 
+
+
+/* ------------------------
+   Reusable Components
+   ------------------------*/
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 3.125em 0.875em;
+}
+.bottom-squares,
+.bad-apples  {
+  padding: 2em 1em;
+}
+.bottom-squares p,
+.for-employers p {
+  margin-top: 1em;
+}
+.for-employers h3 {
+  padding: 2em 1em 0 1em;
+}
+.for-employers p {
+  padding: 0 0 0 1em;
+}
+ .learn-more-link {
+    padding: 0 0 2em 1em;
+}
+
+
+.career-questions,
+.for-employers {
+  background-color: #53b6d0;
+   }
+.bottom-squares h3,
+.find-a-job p,
+.browse-offices p,
+.for-employers h3,
+.for-employers p,
+.learn-more-link a,
+footer p {
+  color: #fff;
+}  
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+   
+
+   /* ------------------------
+   Buttons
+   ------------------------*/
+
+   .btn:link,
+   .btn:visited {
+     background-color: #53b6d0;
+     border: 0.25em solid #53b6d0;
+     color: #fff;
+	   transition: background-color 0.2s, border 0.2s, color 0.2s;	
+}
+	 .btn-full:link,
+	 .btn-full:visited  {
+	  padding: 1.375em 2.625em;
+}
+
+    .btn-small:link,
+    .btn-small:visited {
+    padding: 1.5em;
+}
+
+/* ------------------------
+   Hero Section
+   ------------------------*/
+
+  /* .main-menu a:last-of-type {
+   	float: right;
+   }*/
+   .logo {
+    color: #fff;
+   }
+  
+   .main-menu {
+   	margin: 1em;
+   }
+   .sign-up-btn-small-screen {
+    float: right;
+   }
+   .hero-text-wrapper {
+    margin-top: 8em;
+    height: 19.63em;
+   }
+   .hero-text {
+   	
+    color: white;
+   }
+   .hero-text h1 {
+    text-transform: uppercase;
+   }
+   .header-p {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    display: block;
+   	padding: 1.188em;
+    margin-bottom: 1em;
+   	text-align: center;
+   }
+   header {
+    height: 500px;
+    width: 100%;
+   	background-size: cover;
+	  background-position: center center;
+    padding-top: 1px;
+   }
+   header.img-sm {
+    background-image: url(../img/small-background.jpg);
+   }
+
+  .how-can-btn {
+    color: #000;
+  }
+
+/* ------------------------
+   Header Form
+   ------------------------*/
+   *:focus {outline: none;}
+
+	.header-form {
+    text-align: center;
+	  width: 90%;
+    height: 205px;
+	  margin: 0 auto;
+    padding-bottom: 0px;
+   }
+  
+
+   input[type="text"],
+   input[type="email"] {
+   	width: 100%;
+    height: 40px;
+	  margin-bottom: .75em;
+	  padding: 0 0.6875em 0 0.6875em;
+   }
+   .name,
+   .email {
+    width: 100%;
+   }
+   .btn-wrapper {
+    display: inline-block;
+    margin-top: 20px;
+   }
+   .improve-btn {
+    text-align: center;
+    margin-top: 1.375em;
+    padding: 1.2em;
+   }
+
+   .help-btn {
+    text-align: center;
+    width: 100%;
+    margin-top: 3em;
+    font-style: italic;
+    z-index: 50;
+
+   }
+   .btn-black {
+    background-color: #333;
+    position: relative;
+    color: #fff;
+    padding: 1.5em 1.333em 2.667em 1.333em;
+   }
+   .fa-chevron-down {
+    position: absolute;
+    top: 3em;
+    left: 6.7em;
+    
+
+   }
+
+   /* ------------------------
+   Testimonials
+   ------------------------*/
+
+    .testimonials h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2.1em;
+      margin-bottom: 1.125em;
+    }
+    .testimonials img {
+      display: block;
+      border-radius: 50%;
+      width: 90px;
+      margin: 0 auto;
+    }
+    blockquote {
+      margin: 30px auto 0 auto;
+      width: 50%;
+    }
+
+
+ /* ------------------------
+   Find A Job You'll Love
+   ------------------------*/
+   .bottom-squares {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 220px;
+    min-width: 40%;
+   }
+
+
+
+   .bottom-squares h3,
+   .bottom-squares p {
+    text-align: center;
+   }
+
+
+   .find-a-job {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/homeaway-london.jpg');
+   }
+   .browse-offices {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/homeaway.jpg');
+   }
+   .browse-offices,
+   .find-a-job {
+    background-size: cover;
+   }
+
+   .connect {
+    background-color: #c0c0c0;
+   }
+
+   .career-questions,
+   .connect {
+    height: 10em;
+   }
+
+   /* ------------------------
+   Bad Apples
+   ------------------------*/
+
+   .companies-wrapper {
+    width: 100%;
+    padding: .75em 0;
+    margin: 0 auto;
+    display: table;
+
+   }
+   .bad-apples h2 {
+    margin-bottom: .7em;
+   }
+   .company-logo img {
+    float: left;
+    vertical-align: middle;
+    width: 20%
+   }
+
+  /* ------------------------
+    For Employers
+   ------------------------*/
+   .for-employers p {
+    margin-bottom: 1.143em;
+   }
+
+   .learn-more-link a {
+    text-decoration: underline;
+   }
+   .employer-video {
+    padding: 0;
+   }
+   .employer-video img {
+    width: 100%;
+   }
+
+/* ------------------------
+   Featured In
+   ------------------------*/
+
+   .featured-in h4 {
+    text-align: center;
+    margin-bottom: 0.6667em;
+    color: #838383;
+   }
+
+   /* ------------------------
+   Footer
+   ------------------------*/
+
+   footer {
+    height: 300px;
+    background-image: url('https://tm-prod.global.ssl.fastly.net/images/footer-bg.jpg?v=d18297fba0b22eb0067d74aacc944fef');
+   }
+
+   footer h4 {
+    color: #53b6d0;
+    margin-bottom: 0.9375em;
+   }
+   .footer-muse-logo {
+    padding-bottom: 2.813em;
+   }
+   
+   .footer-container {
+    padding: 0.625em;
+   }
+   .footer-about,
+   .get-involved {
+    width: 50%;
+   }
+
+   .footer-about {
+    float: left;
+   }
+   .get-involved {
+    float: right;
+   }
+
+   .footer-about a,
+   .get-involved a {
+    color: #fff;
+    display: block;
+    padding: 0.4167em 0;
+   }
+  
+   
+
+   
+
+
+
+/* ----------------------------------------
+   Medium Screens
+   ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  .large-screen-menu,
+  .hero-text-large-screen,
+  .join-conversation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+   
+ :root {
+  font-size: 18px;
+ }
+  header.img-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/pocket.jpg');
+  }
+
+   .sign-up-btn-small-screen,
+   .hero-text-small-screen {
+    display: none;
+  }
+
+  .large-screen-menu {
+    float: right;
+  }
+  .large-screen-menu a {
+    color: #fff;
+    padding: 0.3333em;
+  }
+
+  .form-wrapper {
+    text-align: center;
+  }
+
+  .form-group {
+    display: inline-block;
+  }
+  input[type="text"],
+  input[type="email"] {
+    height: 66px;
+    width: auto;
+    border: none;
+  }
+  .help-btn {
+    margin-top: 1em;
+  }
+  .nicole {
+    float: left;
+  }
+
+  .bad-apples h2 {
+    text-align: center;
+  }
+
+  .find-a-job,
+  .career-questions,
+  .connect,
+  .browse-offices {
+    display: block;
+    width: 50%;
+  }
+  .find-a-job,
+  .connect {
+  float: left;
+ }
+  .career-questions,
+  .browse-offices {
+    float: right;
+  }
+  .career-questions,
+  .connect {
+    height: 220px;
+   }
+   .employer-video {
+    float: right;
+    max-width: 60%;
+    padding-right: 5%;
+   }
+   .for-employers-group {
+    width: 35%;
+    display: inline-block;
+   }
+
+   /* ------------------------
+   Footer medium screen
+   ------------------------*/
+  
+  .footer-muse-logo {
+    float: left;
+  }
+  .footer-container {
+    padding: .75em;
+  }
+  .footer-muse-logo,
+  .footer-about,
+  .get-involved,
+  .join-conversation {
+    width: 25%;
+  }
+  .get-involved {
+    float: left;
+  }
+  .join-conversation {
+    float: right;
+  }
+  .join-conversation a {
+    padding: 0.4167em;
+    text-align: center;
+  }
+  .join-conversation i {
+    font-size: 1.167em;
+    color: #e4e4e4;
+    background-color: #53b6d0;
+    padding: .5em;
+    border-radius: 2.5em;
+  }
+}
+
+/* ----------------------------------------
+   Large Screens
+   ---------------------------------------*/
+
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 20px;
+  }
+  .companies-wrapper {
+    max-width: 80%;
+  }
+}
+
+/* ----------------------------------------
+   Extra-Large Screens
+   ---------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
