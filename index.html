@@ -20,10 +20,30 @@
     <body>
 
         <!--Header-->
-     <header class="img-sm img-bg">   
+     <header class="img-sm img-bg">
+
+         <nav class="docked-nav hide">
+            <div class="row docked-row">
+                <div class="docked-logo">
+                    <a class="logo" href="#"><strong>the</strong>muse</a>
+                </div>
+                <form class="docked-wrapper">
+                    <div class="docked-form-name">
+                        <input type="text" name="name" id="docked-name" placeholder="Your name" required>
+                    </div>
+                    <div class="docked-form-email">
+                        <input type="email" name="email" id="docked-email" placeholder="Your email" required>
+                    </div>
+                </form>
+                
+                <a class="btn get-started-docked" href="#">Get Started</a>
+                
+            </div><!--end row-->
+         </nav>
+
          <nav class="main-menu">
             <div class="row">
-                <a class="logo" href="#">themuse</a>
+                <a class="logo" href="#"><strong>the</strong>muse</a>
                 <a class="btn btn-full sign-up-btn-small-screen" href="#">Sign Up / Sign In</a>
                <div class="large-screen-menu"> 
                  
@@ -150,10 +170,10 @@
                 <div class="learn-more-link">
                     <a href="#">LEARN MORE</a>
                 </div>
-             </div>
-        <a class="employer-video" href="#">
-            <img src="https://tm-prod.global.ssl.fastly.net/images/showcase-video.jpg?v=None">
-        </a>
+            </div>
+            <a class="employer-video" href="#">
+                <img src="https://tm-prod.global.ssl.fastly.net/images/showcase-video.jpg?v=None">
+            </a>
         </div>
         
 
@@ -183,7 +203,7 @@
        <!--Footer-->
 
        <footer>
-        <div class="footer-container">
+        <div class="row">
             <div class="footer-muse-logo">
                 <h4>themuse</h4>
                 <p>&#169; 2016 Daily Muse, Inc</p>
@@ -212,11 +232,27 @@
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
-
             </div>
          </div>   
 
        </footer>
-    
+
+       <section class="bottom-mobile-form hide">
+        
+        <form class="form-wrapper">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+        </form>
+        <div class="get-started-btn">
+            <a class="btn" href="#">Get Started</a>
+            <a id="sign-in" href="#">Sign In</a>
+        </div>
+
+       </section>
+    <script type="text/javascript" src="js/muse.js"></script>
     </body>
 </html>

@@ -50,9 +50,7 @@ body {
     font-weight: 200;
     font-size: 0.8125rem;
    }
-   .logo {
-    font-size: 1rem;
-   }
+  
    footer p,
    footer a {font-size: 0.625rem;}
  
@@ -117,7 +115,6 @@ footer p {
    .btn:link,
    .btn:visited {
      background-color: #53b6d0;
-     border: 0.25em solid #53b6d0;
      color: #fff;
 	   transition: background-color 0.2s, border 0.2s, color 0.2s;	
 }
@@ -131,6 +128,14 @@ footer p {
     padding: 1.5em;
 }
 
+  .get-started-btn {
+    margin-top: .85em;
+}
+
+  .get-started-btn .btn {
+    padding: .75em 1em;
+}
+
 /* ------------------------
    Hero Section
    ------------------------*/
@@ -140,6 +145,7 @@ footer p {
    }*/
    .logo {
     color: #fff;
+    font-size: 1.5rem;
    }
   
    .main-menu {
@@ -361,9 +367,6 @@ footer p {
     padding-bottom: 2.813em;
    }
    
-   .footer-container {
-    padding: 0.625em;
-   }
    .footer-about,
    .get-involved {
     width: 50%;
@@ -383,8 +386,41 @@ footer p {
     padding: 0.4167em 0;
    }
   
-   
+    /* ------------------------
+   Bottom Mobile Form
+   ------------------------*/
 
+   .bottom-mobile-form,
+   .docked-nav {
+    background: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: all .1s; 
+   }
+
+   .docked-nav {
+    top: 0;
+    height: 55px;
+   }
+
+   .bottom-mobile-form {
+    bottom: 0;
+    height: 220px;
+   }
+
+   #sign-in {
+    float: right;
+    color: #fff;
+   }
+
+   .hide {
+    opacity: 0;
+}
+   .show {
+    opacity: 1;
+    left: 0;
+}
    
 
 
@@ -396,8 +432,17 @@ footer p {
 @media screen and (max-width: 767px) {
   .large-screen-menu,
   .hero-text-large-screen,
-  .join-conversation {
+  .join-conversation,
+  .docked-nav {
     display: none;
+  }
+
+  footer {
+    margin-bottom: 180px;
+  }
+
+  .testimonials h2 {
+    margin-top: 22px;
   }
 }
 
@@ -427,11 +472,46 @@ footer p {
     text-align: center;
   }
 
-  .form-group {
+  .docked-row {
+    height: 55px;
+  }
+  .docked-logo {
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .docked-logo a {
+    font-size: 28px;
+  }
+
+  .docked-wrapper {
+    position: relative;
+  }
+  .docked-form-name,
+  .docked-form-email {
+    position: absolute;
+    top: -30px;
+  }
+  .docked-form-name {
+    right: 378px;
+  }
+  .docked-form-email {
+    right: 150px;
+  }
+  .get-started-docked {
+    float: right;
+    padding: .25em;
+    margin-top: -26px;
+    margin-right: 50px;
+    border: 0.25em solid #53b6d0;
+  }
+  
+
+  .form-group,
+  .docked-form-group {
     display: inline-block;
   }
-  input[type="text"],
-  input[type="email"] {
+  input#name[type="text"],
+  input#email[type="email"] {
     height: 66px;
     width: auto;
     border: none;
@@ -439,8 +519,11 @@ footer p {
   .help-btn {
     margin-top: 1em;
   }
-  .nicole {
+
+  .testimonials img {
     float: left;
+    margin-left: 15%;
+
   }
 
   .bad-apples h2 {
@@ -475,6 +558,9 @@ footer p {
     width: 35%;
     display: inline-block;
    }
+   .bottom-mobile-form {
+    display: none;
+   }
 
    /* ------------------------
    Footer medium screen
@@ -499,8 +585,9 @@ footer p {
     float: right;
   }
   .join-conversation a {
-    padding: 0.4167em;
+    margin: 0.4167em;
     text-align: center;
+
   }
   .join-conversation i {
     font-size: 1.167em;
@@ -508,6 +595,7 @@ footer p {
     background-color: #53b6d0;
     padding: .5em;
     border-radius: 2.5em;
+    width: 28px;
   }
 }
 
@@ -517,7 +605,7 @@ footer p {
 
 @media screen and (min-width: 992px) {
   :root {
-    font-size: 20px;
+    font-size: 18px;
   }
   .companies-wrapper {
     max-width: 80%;
@@ -530,7 +618,7 @@ footer p {
 
 @media screen and (min-width: 1200px) {
   :root {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
