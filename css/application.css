@@ -1,0 +1,511 @@
+/* ------------------------
+   Global Imports
+   ------------------------*/
+/* ------------------------
+   Base Imports
+   ------------------------*/
+/* ------------------------
+   Basic Setup 
+   ------------------------*/
+:root {
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden; }
+
+h1,
+h2 {
+  text-align: center; }
+
+h2 {
+  font-weight: 300; }
+
+h1,
+h2,
+h3 {
+  font-size: 1.125rem; }
+
+h3 {
+  font-weight: bold; }
+
+h4 {
+  font-size: 1rem; }
+
+p {
+  font-size: .875rem; }
+
+.find-a-job h3,
+.browse-offices h3 {
+  text-shadow: 2px 0px 0px #000; }
+
+a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 0.8125rem; }
+
+footer p,
+footer a {
+  font-size: 0.625rem; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+section {
+  padding: 3.125em 0.875em; }
+
+.bottom-squares,
+.bad-apples {
+  padding: 2em 1em; }
+
+.bottom-squares p,
+.for-employers p {
+  margin-top: 1em; }
+
+.for-employers h3 {
+  padding: 2em 1em 0 1em; }
+
+.for-employers p {
+  padding: 0 0 0 1em; }
+
+.learn-more-link {
+  padding: 0 0 2em 1em; }
+
+.career-questions,
+.for-employers {
+  background-color: #53B6D0; }
+
+.bottom-squares h3,
+.find-a-job p,
+.browse-offices p,
+.for-employers h3,
+.for-employers p,
+.learn-more-link a,
+footer p {
+  color: #fff; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* ------------------------
+   Layout Imports
+   ------------------------*/
+/* ------------------------
+   Hero Section
+   ------------------------*/
+.logo {
+  color: #fff;
+  font-size: 1.5rem; }
+
+.main-menu {
+  margin: 1em; }
+
+.sign-up-btn-small-screen {
+  float: right; }
+
+.hero-text-wrapper {
+  margin-top: 8em;
+  height: 19.63em; }
+.hero-text {
+  color: #fff; }
+.hero-text h1 {
+  text-transform: uppercase; }
+
+.header-p {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  display: block;
+  padding: 1.188em;
+  margin-bottom: 1em; }
+
+header {
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 1px; }
+
+header.img-sm {
+  background-image: url(../img/small-background.jpg); }
+
+/* ------------------------
+Header Form
+------------------------*/
+*:focus {
+  outline: none; }
+
+.header-form {
+  width: 90%;
+  height: 205px;
+  margin: 0 auto;
+  padding-bottom: 0px; }
+
+input[type="text"],
+input[type="email"] {
+  height: 40px;
+  margin-bottom: .75em;
+  padding: 0 0.6875em 0 0.6875em; }
+
+/* ------------------------
+Testimonials
+------------------------*/
+.testimonials h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2.1em;
+  margin-bottom: 1.125em; }
+
+.testimonials img {
+  display: block;
+  border-radius: 50%;
+  width: 90px;
+  margin: 0 auto; }
+
+blockquote {
+  margin: 30px auto 0 auto;
+  width: 50%; }
+
+/* ------------------------
+  Find A Job You'll Love
+  ------------------------*/
+.bottom-squares {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 220px;
+  min-width: 40%; }
+
+.find-a-job {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/homeaway-london.jpg"); }
+
+.browse-offices {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/homeaway.jpg"); }
+
+.browse-offices,
+.find-a-job {
+  background-size: cover; }
+
+.connect {
+  background-color: #c0c0c0; }
+
+.career-questions,
+.connect {
+  height: 10em; }
+
+/* ------------------------
+  Bad Apples
+  ------------------------*/
+.companies-wrapper {
+  padding: .75em 0;
+  margin: 0 auto;
+  display: table; }
+
+.bad-apples h2 {
+  margin-bottom: .7em; }
+
+.company-logo img {
+  float: left;
+  vertical-align: middle;
+  width: 20%; }
+
+/* ------------------------
+   For Employers
+  ------------------------*/
+.for-employers p {
+  margin-bottom: 1.143em; }
+
+.learn-more-link a {
+  text-decoration: underline; }
+
+.employer-video {
+  padding: 0; }
+
+/* ------------------------
+   Featured In
+   ------------------------*/
+.featured-in h4 {
+  margin-bottom: 0.6667em;
+  color: #555; }
+
+/* ------------------------
+  Footer
+  ------------------------*/
+footer {
+  height: 300px;
+  background-image: url("https://tm-prod.global.ssl.fastly.net/images/footer-bg.jpg?v=d18297fba0b22eb0067d74aacc944fef"); }
+
+footer h4 {
+  color: #53B6D0;
+  margin-bottom: 0.9375em; }
+
+.footer-muse-logo {
+  padding-bottom: 2.813em; }
+
+.footer-about,
+.get-involved {
+  width: 50%; }
+
+.footer-about {
+  float: left; }
+
+.get-involved {
+  float: right; }
+
+.footer-about a,
+.get-involved a {
+  color: #fff;
+  display: block;
+  padding: 0.4167em 0; }
+
+/* ------------------------
+Bottom Mobile Form
+------------------------*/
+.bottom-mobile-form,
+.docked-nav {
+  background: #333;
+  position: fixed;
+  z-index: 1;
+  transition: all .1s; }
+
+.docked-nav {
+  top: 0;
+  height: 55px; }
+
+.bottom-mobile-form {
+  bottom: 0;
+  height: 220px; }
+
+#sign-in {
+  float: right;
+  color: #fff; }
+
+.hide {
+  opacity: 0; }
+
+.show {
+  opacity: 1;
+  left: 0; }
+
+.header-p, .header-form, .bottom-squares h3, .bottom-squares p, .featured-in h4 {
+  text-align: center; }
+
+header, input[type="text"],
+input[type="email"], .name,
+.email, .companies-wrapper, .employer-video img, .bottom-mobile-form,
+.docked-nav {
+  width: 100%; }
+
+/* ------------------------
+   Components Import
+   ------------------------*/
+/* ------------------------
+ Buttons
+ ------------------------*/
+.btn:link, .btn:visited {
+  background-color: #53B6D0;
+  color: #fff;
+  transition: background-color 0.2s, border 0.2s, color 0.2s; }
+.btn-full:link, .btn-full:visited {
+  padding: 1.375em 2.625em; }
+.btn-small:link, .btn-small:visited {
+  padding: 1.5em; }
+.btn-wrapper {
+  display: inline-block;
+  margin-top: 20px; }
+.btn-black {
+  background-color: #333;
+  position: relative;
+  color: #fff;
+  padding: 1.5em 1.333em 2.667em 1.333em; }
+
+.improve-btn {
+  text-align: center;
+  margin-top: 1.375em;
+  padding: 1.2em; }
+
+.help-btn {
+  text-align: center;
+  width: 100%;
+  margin-top: 3em;
+  font-style: italic;
+  z-index: 50; }
+
+.fa-chevron-down {
+  position: absolute;
+  top: 3em;
+  left: 6.7em; }
+
+/* ----------------------------------------
+   Medium Screens
+   ---------------------------------------*/
+@media screen and (max-width: 767px) {
+  .large-screen-menu,
+  .hero-text-large-screen,
+  .join-conversation,
+  .docked-nav {
+    display: none; }
+
+  footer {
+    margin-bottom: 180px; }
+
+  .testimonials h2 {
+    margin-top: 22px; } }
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px; }
+
+  header.img-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pocket.jpg"); }
+
+  .sign-up-btn-small-screen,
+  .hero-text-small-screen {
+    display: none; }
+
+  .large-screen-menu {
+    float: right; }
+
+  .large-screen-menu a {
+    color: #fff;
+    padding: 0.3333em; }
+
+  .form-wrapper {
+    text-align: center; }
+
+  .docked-row {
+    height: 55px; }
+
+  .docked-logo {
+    display: inline-block;
+    margin-top: 6px; }
+
+  .docked-logo a {
+    font-size: 28px; }
+
+  .docked-wrapper {
+    position: relative; }
+
+  .docked-form-name,
+  .docked-form-email {
+    position: absolute;
+    top: -30px; }
+
+  .docked-form-name {
+    right: 378px; }
+
+  .docked-form-email {
+    right: 150px; }
+
+  .get-started-docked {
+    float: right;
+    padding: .25em;
+    margin-top: -26px;
+    margin-right: 50px;
+    border: 0.25em solid #53B6D0; }
+
+  .form-group,
+  .docked-form-group {
+    display: inline-block; }
+
+  input#name[type="text"],
+  input#email[type="email"] {
+    height: 66px;
+    width: auto;
+    border: none; }
+
+  .help-btn {
+    margin-top: 1em; }
+
+  .testimonials img {
+    float: left;
+    margin-left: 15%; }
+
+  .bad-apples h2 {
+    text-align: center; }
+
+  .find-a-job,
+  .career-questions,
+  .connect,
+  .browse-offices {
+    display: block;
+    width: 50%; }
+
+  .find-a-job,
+  .connect {
+    float: left; }
+
+  .career-questions,
+  .browse-offices {
+    float: right; }
+
+  .career-questions,
+  .connect {
+    height: 220px; }
+
+  .employer-video {
+    float: right;
+    max-width: 60%;
+    padding-right: 5%; }
+
+  .for-employers-group {
+    width: 35%;
+    display: inline-block; }
+
+  .bottom-mobile-form {
+    display: none; }
+
+  /* ------------------------
+  Footer medium screen
+  ------------------------*/
+  .footer-muse-logo {
+    float: left; }
+
+  .footer-container {
+    padding: .75em; }
+
+  .footer-muse-logo,
+  .footer-about,
+  .get-involved,
+  .join-conversation {
+    width: 25%; }
+
+  .get-involved {
+    float: left; }
+
+  .join-conversation {
+    float: right; }
+
+  .join-conversation a {
+    margin: 0.4167em;
+    text-align: center; }
+
+  .join-conversation i {
+    font-size: 1.167em;
+    color: #e4e4e4;
+    background-color: #53B6D0;
+    padding: .5em;
+    border-radius: 2.5em;
+    width: 28px; } }
+/* ----------------------------------------
+   Large Screens
+   ---------------------------------------*/
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 18px; }
+
+  .companies-wrapper {
+    max-width: 80%; } }
+/* ----------------------------------------
+   Extra-Large Screens
+   ---------------------------------------*/
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=application.css.map */

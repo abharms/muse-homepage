@@ -1,0 +1,79 @@
+/* ------------------------
+   Hero Section
+   ------------------------*/
+
+.logo {
+  color: $color-text-light;
+  font-size: 1.5rem;
+}
+
+.main-menu {
+  margin: 1em;
+}
+
+.sign-up-btn-small-screen {
+  float: right;
+}
+
+.hero {
+  &-text-wrapper {
+    margin-top: 8em;
+    height: 19.63em;
+  } 
+
+  &-text {
+    color: $color-text-light;
+  }
+
+  &-text h1 {
+    text-transform: uppercase;
+  }
+}
+
+.header-p {
+  @extend %centered;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  display: block;
+  padding: 1.188em;
+  margin-bottom: 1em;	
+}
+
+header {
+  @extend %fullWidth;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 1px;
+}
+
+header.img-sm {
+  background-image: url(../img/small-background.jpg);
+}
+
+/* ------------------------
+Header Form
+------------------------*/
+
+*:focus {
+  outline: none;
+}
+
+.header-form {
+  @extend %centered;
+  width: 90%;
+  height: 205px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+
+input[type="text"],
+input[type="email"] {
+  @extend %fullWidth;
+  height: 40px;
+  margin-bottom: .75em;
+  padding: 0 0.6875em 0 0.6875em;
+}
+.name,
+.email {
+  @extend %fullWidth;
+}

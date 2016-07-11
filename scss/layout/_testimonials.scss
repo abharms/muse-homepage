@@ -1,0 +1,21 @@
+   /* ------------------------
+   Testimonials
+   ------------------------*/
+
+.testimonials h2 {
+  border-bottom: 1px solid $color-light-grey;
+  padding-bottom: 2.1em;
+  margin-bottom: 1.125em;
+}
+
+.testimonials img {
+  display: block;
+  border-radius: 50%;
+  width: 90px;
+  margin: 0 auto;
+}
+
+blockquote {
+  margin: 30px auto 0 auto;
+  width: 50%;
+}

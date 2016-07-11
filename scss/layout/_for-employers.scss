@@ -1,0 +1,19 @@
+ /* ------------------------
+    For Employers
+   ------------------------*/
+   
+.for-employers p {
+  margin-bottom: 1.143em;
+}
+
+.learn-more-link a {
+  text-decoration: underline;
+}
+
+.employer-video {
+  padding: 0;
+}
+
+.employer-video img {
+  @extend %fullWidth;
+}

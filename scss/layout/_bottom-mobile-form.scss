@@ -1,0 +1,36 @@
+   /* ------------------------
+   Bottom Mobile Form
+   ------------------------*/
+
+.bottom-mobile-form,
+.docked-nav {
+  @extend %fullWidth;
+  background: $color-almost-black;
+  position: fixed;
+  z-index: 1;
+  transition: all .1s; 
+}
+
+.docked-nav {
+  top: 0;
+  height: 55px;
+}
+
+.bottom-mobile-form {
+  bottom: 0;
+  height: 220px;
+}
+
+#sign-in {
+  float: right;
+  color: $color-text-light;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  left: 0;
+}

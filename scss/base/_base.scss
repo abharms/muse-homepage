@@ -1,0 +1,116 @@
+/* ------------------------
+   Basic Setup 
+   ------------------------*/  
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: $color-text-base;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+h1,
+h2  {
+	text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.125rem;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .875rem;
+}
+
+.find-a-job h3,
+.browse-offices h3 {
+  text-shadow: 2px 0px 0px #000;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 0.8125rem;
+}
+  
+footer p,
+footer a {
+  font-size: 0.625rem;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 3.125em 0.875em;
+}
+
+.bottom-squares,
+.bad-apples  {
+  padding: 2em 1em;
+}
+
+.bottom-squares p,
+.for-employers p {
+  margin-top: 1em;
+}
+
+.for-employers h3 {
+  padding: 2em 1em 0 1em;
+}
+
+.for-employers p {
+  padding: 0 0 0 1em;
+}
+
+ .learn-more-link {
+  padding: 0 0 2em 1em;
+}
+
+.career-questions,
+.for-employers {
+  background-color: $color-main-blue;
+}
+
+.bottom-squares h3,
+.find-a-job p,
+.browse-offices p,
+.for-employers h3,
+.for-employers p,
+.learn-more-link a,
+footer p {
+  color: $color-text-light;
+}  
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
