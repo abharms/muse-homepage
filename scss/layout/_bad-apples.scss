@@ -1,0 +1,20 @@
+ /* ------------------------
+   Bad Apples
+   ------------------------*/
+
+.companies-wrapper {
+  @extend %fullWidth;
+  padding: .75em 0;
+  margin: 0 auto;
+  display: table;
+}
+
+.bad-apples h2 {
+  margin-bottom: .7em;
+}
+
+.company-logo img {
+  float: left;
+  vertical-align: middle;
+  width: 20%
+}

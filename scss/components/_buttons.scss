@@ -1,0 +1,56 @@
+  /* ------------------------
+   Buttons
+   ------------------------*/
+
+.btn {
+   &:link,
+   &:visited {
+     background-color: $color-main-blue;
+     color: $color-text-light;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;  
+  }
+
+   &-full:link,
+   &-full:visited  {
+     padding: 1.375em 2.625em;
+  }
+
+   &-small:link,
+   &-small:visited {
+     padding: 1.5em;
+  }
+
+   &-wrapper {
+     display: inline-block;
+     margin-top: 20px;
+   }
+
+   &-black {
+     background-color: $color-almost-black;
+     position: relative;
+     color: $color-text-light;
+     padding: 1.5em 1.333em 2.667em 1.333em;
+   }
+}
+
+  
+.improve-btn {
+  text-align: center;
+  margin-top: 1.375em;
+  padding: 1.2em;
+}
+
+.help-btn {
+  text-align: center;
+  width: 100%;
+  margin-top: 3em;
+  font-style: italic;
+  z-index: 50;
+
+}
+
+.fa-chevron-down {
+  position: absolute;
+  top: 3em;
+  left: 6.7em;
+}

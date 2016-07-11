@@ -1,0 +1,37 @@
+ /* ------------------------
+   Footer
+   ------------------------*/
+
+footer {
+  height: 300px;
+  background-image: url('https://tm-prod.global.ssl.fastly.net/images/footer-bg.jpg?v=d18297fba0b22eb0067d74aacc944fef');
+}
+
+footer h4 {
+  color: $color-main-blue;
+  margin-bottom: 0.9375em;
+}
+
+.footer-muse-logo {
+  padding-bottom: 2.813em;
+}
+
+.footer-about,
+.get-involved {
+  width: 50%;
+}
+
+.footer-about {
+  float: left;
+}
+
+.get-involved {
+  float: right;
+}
+
+.footer-about a,
+.get-involved a {
+  color: $color-text-light;
+  display: block;
+  padding: 0.4167em 0;
+}

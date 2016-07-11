@@ -1,0 +1,38 @@
+ /* ------------------------
+   Find A Job You'll Love
+   ------------------------*/
+.bottom {
+  &-squares {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 220px;
+    min-width: 40%;
+  }
+
+  &-squares h3,
+  &-squares p {
+    @extend %centered;
+  }
+}
+
+.find-a-job {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/homeaway-london.jpg');
+}
+
+.browse-offices {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/homeaway.jpg');
+}
+
+.browse-offices,
+.find-a-job {
+  background-size: cover;
+}
+
+.connect {
+  background-color: #c0c0c0;
+}
+
+.career-questions,
+.connect {
+  height: 10em;
+}

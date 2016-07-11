@@ -1,0 +1,9 @@
+/* ------------------------
+   Featured In
+   ------------------------*/
+
+.featured-in h4 {
+	@extend %centered;
+	margin-bottom: 0.6667em;
+	color: $color-text-base;
+}
